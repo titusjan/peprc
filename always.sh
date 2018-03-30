@@ -1,5 +1,11 @@
 # Commands always executed (Whenever a new bash shell is opened).
 
+######################
+# Aliases & Settings #
+######################
+
+
+
 alias less="less -SR"
 alias ls="ls --color"
 #alias ls="ls -G"
@@ -16,5 +22,34 @@ alias tree='tree -C'
 #alias egrep='egrep --color=auto'
 #alias fgrep='fgrep --color=auto'
 
+export EDITOR='emacs -nw'
+export SVN_EDITOR='emacs -nw'
+
+
+##########################
+# Functions and commands #
+##########################
+
+
+#function svnkompare {  
+#    svn diff $* | kompare -o - 
+#}
+
+# extened time with percentage info.
+#alias etime="/usr/bin/time -f 'user    %U\nsystem  %S\nelapsed %E\nCPU     %P\n'"
+
+
+
+#######################
+# Fixes and knowledge #
+#######################
+
 #export TREE_CHARSET=LATIN-1
+
+#export PYTHONNOUSERSITE=1 # don't add user site directory to sys.path
+export PYTHONDONTWRITEBYTECODE=1
+
+# Fix: "Qt: Failed to create XKB context!" error
+# See: http://stackoverflow.com/questions/26974644/no-keyboard-input-in-qt-creator-after-update-to-qt5
+#export QT_XKB_CONFIG_ROOT=/usr/share/X11/xkb
 
