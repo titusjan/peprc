@@ -1,0 +1,11 @@
+# https://www.gnu.org/software/bash/manual/html_node/Readline-Init-File-Syntax.html
+# C-x C-r re-reads init data
+
+set completion-ignore-case on
+
+set show-all-if-ambiguous on
+
+set show-all-if-unmodified on
+set skip-completed-text on 
+
+
