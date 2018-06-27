@@ -25,6 +25,7 @@ alias tree='tree -C'
 export EDITOR='emacs -nw'
 export SVN_EDITOR='emacs -nw'
 
+alias ethtool=/sbin/ethtool
 
 ##########################
 # Functions and commands #
@@ -52,4 +53,5 @@ export PYTHONDONTWRITEBYTECODE=1
 # Fix: "Qt: Failed to create XKB context!" error
 # See: http://stackoverflow.com/questions/26974644/no-keyboard-input-in-qt-creator-after-update-to-qt5
 #export QT_XKB_CONFIG_ROOT=/usr/share/X11/xkb
+
 
