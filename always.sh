@@ -22,10 +22,13 @@ alias tree='tree -C'
 #alias egrep='egrep --color=auto'
 #alias fgrep='fgrep --color=auto'
 
+/usr/share/doc/ifupdown/examples/
+
 export EDITOR='emacs -nw'
 export SVN_EDITOR='emacs -nw'
 
 alias ethtool=/sbin/ethtool
+#alias pycharm=/home/kenter/Install/pycharm-community-2018.1.4/bin/pycharm.sh
 
 ##########################
 # Functions and commands #
