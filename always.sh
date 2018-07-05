@@ -22,8 +22,6 @@ alias tree='tree -C'
 #alias egrep='egrep --color=auto'
 #alias fgrep='fgrep --color=auto'
 
-/usr/share/doc/ifupdown/examples/
-
 export EDITOR='emacs -nw'
 export SVN_EDITOR='emacs -nw'
 
