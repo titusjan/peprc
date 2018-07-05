@@ -9,5 +9,5 @@ export PEPRC_AT_LOGIN_EXECUTED=1
 
 
 #export PATH="/home/pepijnk/local/bin:$PATH"
-#export PATH="/home/pepijnk/.local/bin:$PATH"
+export PATH="/${HOME}/.local/bin:$PATH"
 
