@@ -8,4 +8,4 @@ set show-all-if-ambiguous on
 set show-all-if-unmodified on
 set skip-completed-text on 
 
-
+set bell-style none
