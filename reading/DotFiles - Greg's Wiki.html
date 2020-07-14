@@ -1,0 +1,381 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="index,nofollow">
+
+<title>DotFiles - Greg's Wiki</title>
+<script type="text/javascript" src="DotFiles%20-%20Greg's%20Wiki_files/common.js"></script>
+
+<script type="text/javascript">
+<!--
+var search_hint = "Search";
+//-->
+</script>
+
+<script type="text/javascript">
+<!-- // GUI edit link and i18n
+var gui_editor_link_href = "/DotFiles?action=edit&editor=gui";
+var gui_editor_link_text = "Edit (GUI)";
+//-->
+</script>
+
+<link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="DotFiles%20-%20Greg's%20Wiki_files/common.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="screen" href="DotFiles%20-%20Greg's%20Wiki_files/screen.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="print" href="DotFiles%20-%20Greg's%20Wiki_files/print.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="projection" href="DotFiles%20-%20Greg's%20Wiki_files/projection.css">
+
+<!-- css only for MS IE6/IE7 browsers -->
+<!--[if lt IE 8]>
+   <link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="/moin_static198/modernized/css/msie.css">
+<![endif]-->
+
+
+<link rel="alternate" title="Greg's Wiki: DotFiles" href="http://mywiki.wooledge.org/DotFiles?diffs=1&amp;show_att=1&amp;action=rss_rc&amp;unique=0&amp;page=DotFiles&amp;ddiffs=1" type="application/rss+xml">
+<link rel="alternate" type="application/wiki" title="Edit" href="http://mywiki.wooledge.org/DotFiles?action=edit">
+
+<link rel="Start" href="http://mywiki.wooledge.org/EnglishFrontPage">
+<link rel="Alternate" title="Wiki Markup" href="http://mywiki.wooledge.org/DotFiles?action=raw">
+<link rel="Alternate" media="print" title="Print View" href="http://mywiki.wooledge.org/DotFiles?action=print">
+<link rel="Search" href="http://mywiki.wooledge.org/FindPage">
+<link rel="Index" href="http://mywiki.wooledge.org/TitleIndex">
+<link rel="Glossary" href="http://mywiki.wooledge.org/WordIndex">
+<link rel="Help" href="http://mywiki.wooledge.org/HelpOnFormatting">
+</head>
+
+<body dir="ltr" lang="en">
+
+<div id="header">
+
+<form id="searchform" method="get" action="/DotFiles">
+<div>
+<input type="hidden" name="action" value="fullsearch">
+<input type="hidden" name="context" value="180">
+<label for="searchinput" style="display: none;">Search:</label>
+<input id="searchinput" type="text" name="value" value="Search" size="20" onfocus="searchFocus(this)" onblur="searchBlur(this)" onkeyup="searchChange(this)" onchange="searchChange(this)" alt="Search" class="disabled">
+<input id="titlesearch" name="titlesearch" type="submit" value="Titles" alt="Search Titles" disabled="disabled">
+<input id="fullsearch" name="fullsearch" type="submit" value="Text" alt="Search Full Text" disabled="disabled">
+</div>
+</form>
+<script type="text/javascript">
+<!--// Initialize search form
+var f = document.getElementById('searchform');
+f.getElementsByTagName('label')[0].style.display = 'none';
+var e = document.getElementById('searchinput');
+searchChange(e);
+searchBlur(e);
+//-->
+</script>
+
+<div id="logo"><a href="http://mywiki.wooledge.org/EnglishFrontPage"><img src="DotFiles%20-%20Greg's%20Wiki_files/moinmoin.png" alt="MoinMoin Logo"></a></div>
+<div id="username"><a href="http://mywiki.wooledge.org/DotFiles?action=login" id="login" rel="nofollow">Login</a></div>
+<h1 id="locationline">
+
+<span id="pagelocation"><a href="http://mywiki.wooledge.org/DotFiles">DotFiles</a></span>
+</h1>
+
+
+<ul id="navibar">
+<li class="wikilink"><a href="http://mywiki.wooledge.org/BashGuide">BashGuide</a></li><li class="wikilink"><a href="http://mywiki.wooledge.org/BashFAQ">BashFAQ</a></li><li class="wikilink"><a href="http://mywiki.wooledge.org/RecentChanges">RecentChanges</a></li><li class="wikilink"><a href="http://mywiki.wooledge.org/FindPage">FindPage</a></li><li class="wikilink"><a href="http://mywiki.wooledge.org/HelpContents">HelpContents</a></li><li class="current"><a href="http://mywiki.wooledge.org/DotFiles">DotFiles</a></li>
+</ul>
+
+<div id="pageline"><hr style="display:none;"></div>
+
+<ul class="editbar"><li><a href="http://mywiki.wooledge.org/DotFiles?action=edit&amp;editor=text" name="texteditlink" rel="nofollow">Edit (Text)</a></li><li><a href="http://mywiki.wooledge.org/DotFiles?action=edit&amp;editor=gui">Edit (GUI)</a></li><li class="toggleCommentsButton" style="display:none;"><a href="#" class="nbcomment" onclick="toggleComments();return false;">Comments</a></li><li><a class="nbinfo" href="http://mywiki.wooledge.org/DotFiles?action=info" rel="nofollow">Info</a></li><li><a class="nbattachments" href="http://mywiki.wooledge.org/DotFiles?action=AttachFile" rel="nofollow">Attachments</a></li><li>
+<form class="actionsmenu" method="GET" action="/DotFiles">
+<div>
+    
+    <select name="action" onchange="if ((this.selectedIndex != 0) &amp;&amp;
+                      (this.options[this.selectedIndex].disabled == false)) {
+                this.form.submit();
+            }
+            this.selectedIndex = 0;">
+        <option value="show" selected="selected">More Actions:</option><option value="raw">Raw Text</option>
+<option value="print">Print View</option>
+<option value="RenderAsDocbook">Render as Docbook</option>
+<option value="refresh">Delete Cache</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="SpellCheck">Check Spelling</option>
+<option value="LikePages">Like Pages</option>
+<option value="LocalSiteMap">Local Site Map</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="RenamePage" disabled="disabled" class="disabled">Rename Page</option>
+<option value="DeletePage" disabled="disabled" class="disabled">Delete Page</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="show" disabled="disabled" class="disabled">Subscribe User</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="show" disabled="disabled" class="disabled">Remove Spam</option>
+<option value="show" disabled="disabled" class="disabled">Revert to this revision</option>
+<option value="PackagePages">Package Pages</option>
+<option value="SyncPages">Sync Pages</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="Load">Load</option>
+<option value="Save">Save</option>
+<option value="SlideShow">SlideShow</option>
+    </select>
+    
+    
+</div>
+<script type="text/javascript">
+<!--// Init menu
+actionsMenuInit('More Actions:');
+//-->
+</script>
+</form>
+</li></ul>
+
+</div>
+
+<div id="page" dir="ltr" lang="en">
+<div dir="ltr" id="content" lang="en"><span class="anchor" id="top"></span>
+<span class="anchor" id="line-1"></span><p class="line867">
+</p><h1 id="Configuring_your_login_sessions_with_dot_files">Configuring your login sessions with dot files</h1>
+<span class="anchor" id="line-2"></span><span class="anchor" id="line-3"></span><p class="line874">Unless otherwise specified, this documentation assumes you're using bash as your login shell, and are using Linux. <span class="anchor" id="line-4"></span><span class="anchor" id="line-5"></span></p><p class="line874">The
+ way your system behaves with respect to the reading of "dot files" at 
+login time, setting up aliases, setting up environment variables, and so
+ on is all highly dependent on how you actually log in. <span class="anchor" id="line-6"></span><span class="anchor" id="line-7"></span></p><p class="line867">
+</p><h2 id="Console_logins">Console logins</h2>
+<span class="anchor" id="line-8"></span><span class="anchor" id="line-9"></span><p class="line862">Let's
+ start with the simplest configuration: a local login on the Linux text 
+console, without any graphical environment at all, without systemd in 
+the picture.  In this case, when you boot the computer, you eventually 
+see a "login:" prompt.  This prompt is produced by a program called <tt class="backtick">getty(8)</tt> which runs on the tty (terminal) device.  When you type a username, getty reads it and passes it to the program called <tt class="backtick">login(1)</tt>.  <tt class="backtick">login</tt>
+ reads the password database and decides whether it needs to ask you for
+ a password.  Once you've provided your password, login "execs" your 
+login shell, bash, with a hyphen in front of the process name 
+("-/bin/bash" for example).  This leading hyphen is a special ancient 
+hack which means "this is a login shell, not a regular shell". <span class="anchor" id="line-10"></span><span class="anchor" id="line-11"></span></p><p class="line862">Now, since bash is being invoked as a login shell, it reads <tt class="backtick">/etc/profile</tt> first.  On Linux systems, this will typically also source some or all files in <tt class="backtick">/etc/profile.d</tt> (as suggested by the <a class="http" href="http://refspecs.linuxfoundation.org/LSB_3.2.0/LSB-Core-generic/LSB-Core-generic/sh.html">Linux Standard Base</a> -- generally <tt class="backtick">/etc/profile</tt> should include code for this).  Then, bash looks in your home directory for <tt class="backtick">.bash_profile</tt>, and if it finds it, it reads that.  If it doesn't find <tt class="backtick">.bash_profile</tt>, it looks for <tt class="backtick">.bash_login</tt>, and if it doesn't find that, it looks for <tt class="backtick">.profile</tt> (the standard Bourne/POSIX/Korn shell configuration file).  Otherwise, it stops looking for dot files, and gives you a prompt. <span class="anchor" id="line-12"></span><span class="anchor" id="line-13"></span></p><p class="line862">Many Linux systems also have another layer called PAM which is relevant here.  Before "execing" bash, login will read the <tt class="backtick">/etc/pam.d/login</tt> file (or its equivalent on your system), which may tell it to read various other files such as <tt class="backtick">/etc/environment</tt>.  Other systems such as OpenBSD have an <tt class="backtick">/etc/login.conf</tt>
+ file which controls resource limits for various classes of user 
+accounts.  So you may have some extra enviroment variables, process 
+limits, and so on, before your shell reads <tt class="backtick">/etc/profile</tt>. <span class="anchor" id="line-14"></span><span class="anchor" id="line-15"></span></p><p class="line862">You may have noted that <tt class="backtick">.bashrc</tt> is not being read in this situation.  You should therefore <strong>always</strong> have <tt class="backtick">source&nbsp;~/.bashrc</tt> at the end of your <tt class="backtick">.bash_profile</tt> in order to force it to be read by a login shell. If you use <tt class="backtick">.profile</tt> instead of <tt class="backtick">.bash_profile</tt>, you additionally need to test if the shell is bash first:  <span class="anchor" id="line-16"></span><span class="anchor" id="line-17"></span></p><p class="line867"><span class="anchor" id="line-18"></span><span class="anchor" id="line-19"></span><span class="anchor" id="line-20"></span><span class="anchor" id="line-21"></span><span class="anchor" id="line-22"></span></p><pre><span class="anchor" id="line-1"></span># .profile
+<span class="anchor" id="line-2"></span>if [ -n "$BASH" ] &amp;&amp; [ -r ~/.bashrc ]; then
+<span class="anchor" id="line-3"></span>    . ~/.bashrc
+<span class="anchor" id="line-4"></span>fi</pre><span class="anchor" id="line-23"></span><span class="anchor" id="line-24"></span><p class="line862">Why is <tt class="backtick">.bashrc</tt> a separate file from <tt class="backtick">.bash_profile</tt>,
+ then?  There are a couple reasons.  The first is performance -- when 
+machines were extremely slow compared to today's workstations, 
+processing the commands in <tt class="backtick">.profile</tt> or <tt class="backtick">.bash_profile</tt>
+ could take quite a long time, especially on machines where a lot of the
+ work had to be done by external commands (before Korn/Bash shells).  So
+ the difficult initial set-up commands, which create environment 
+variables that can be passed down to <a href="http://mywiki.wooledge.org/ProcessManagement#theory">child processes</a>, are put in <tt class="backtick">.bash_profile</tt>.  The transient settings and aliases/functions which are not inherited are put in <tt class="backtick">.bashrc</tt> so that they can be re-read by every new interactive shell. <span class="anchor" id="line-25"></span><span class="anchor" id="line-26"></span></p><p class="line862">The second reason why <tt class="backtick">.bashrc</tt>
+ is separate is due to work habits.  If you work in an office setting 
+with a terminal on your desk, you probably login one time at the start 
+of each day, and logout at the end of the day.  You may put various 
+special commands in your <tt class="backtick">.bash_profile</tt> that 
+you want to run at the start of each day, when you login -- checking for
+ announcements from management, etc.  You wouldn't want those to be done
+ every time you launch a new shell.  So, having this separation gives 
+you some flexibility. <span class="anchor" id="line-27"></span><span class="anchor" id="line-28"></span></p><p class="line867"></p><hr><p class="line874"> <span class="anchor" id="line-29"></span><span class="anchor" id="line-30"></span></p><p class="line862">Let's take a moment to review.  A system administrator has set up a Debian system (which is Linux-based and uses PAM) and has a <a href="http://mywiki.wooledge.org/locale">locale</a> setting of <tt class="backtick">LANG=en_US</tt> in <tt class="backtick">/etc/environment</tt>.  A local user named pierre prefers to use the <tt class="backtick">fr_CA</tt> locale instead, so he puts <tt class="backtick">export&nbsp;LANG=fr_CA</tt> in his <tt class="backtick">.bash_profile</tt>.  He also puts <tt class="backtick">source&nbsp;~/.bashrc</tt> in that same file, and then puts <tt class="backtick">set&nbsp;+o&nbsp;histexpand</tt> in his <tt class="backtick">.bashrc</tt>.  Now he logs in to the Debian system by sitting at the console.  <tt class="backtick">login(1)</tt> (via PAM) reads <tt class="backtick">/etc/environment</tt> and puts <tt class="backtick">LANG=en_US</tt> in the environment.  Then login "execs" bash, which reads <tt class="backtick">/etc/profile</tt> and <tt class="backtick">.bash_profile</tt>.  The <tt class="backtick">export</tt> command in <tt class="backtick">.bash_profile</tt> causes the environment variable <tt class="backtick">LANG</tt> to be changed from <tt class="backtick">en_US</tt> to <tt class="backtick">fr_CA</tt>.  Finally, the <tt class="backtick">source</tt> command causes bash to read <tt class="backtick">.bashrc</tt>, so that the <tt class="backtick">set&nbsp;+o&nbsp;histexpand</tt> command is executed for this shell.  After all this, pierre gets his prompt and is ready to type commands interactively. <span class="anchor" id="line-31"></span><span class="anchor" id="line-32"></span></p><p class="line867">
+</p><h2 id="Remote_shell_logins">Remote shell logins</h2>
+<span class="anchor" id="line-33"></span><span class="anchor" id="line-34"></span><p class="line862">Now
+ let's take the second-simplest example: an ssh login.  This is 
+extremely similar to the text console login, except that instead of 
+using getty and login to handle the initial greeting and password 
+authentication, <tt class="backtick">sshd(8)</tt> handles it.  <tt class="backtick">sshd</tt> in Debian is also linked with PAM, and it will read the <tt class="backtick">/etc/pam.d/ssh</tt> file (instead of <tt class="backtick">/etc/pam.d/login</tt>).
+  Otherwise, the handling is the same.  Once sshd has run through the 
+PAM steps (if applicable to your system), it "execs" bash as a login 
+shell, which causes it to read <tt class="backtick">/etc/profile</tt> and then one of <tt class="backtick">.bash_profile</tt> or <tt class="backtick">.bash_login</tt> or <tt class="backtick">.profile</tt>. <span class="anchor" id="line-35"></span><span class="anchor" id="line-36"></span></p><p class="line862">The major difference when using a remote shell login instead of a local console login is that there is a client <tt class="backtick">ssh</tt> process running on your local system (or wherever you <tt class="backtick">ssh</tt>-ed from) which already has its own environment variables -- and some of those may be sent to the <tt class="backtick">sshd</tt> on the system you're logging into.  In particular, it is desirable for the <tt class="backtick">LANG</tt> and <tt class="backtick">LC_*</tt>
+ variables to be preserved by the remote shell.  Unfortunately, the 
+configuration files on the server may override them.  Getting this set 
+up to work correctly in all cases is tricky.  (Here's an <a class="http" href="http://wiki.debian.org/Locale">example procedure for Debian</a>.) <span class="anchor" id="line-37"></span><span class="anchor" id="line-38"></span></p><p class="line867">
+</p><h2 id="Remote_non_login_non_interactive_shells">Remote non login non interactive shells</h2>
+<span class="anchor" id="line-39"></span><span class="anchor" id="line-40"></span><p class="line862">Bash has a special compile time option that will cause it to source the <tt class="backtick">.bashrc</tt>
+ file on non-login, non-interactive ssh sessions. This feature is only 
+enabled by certain OS vendors (mostly Linux distributions).  It is not 
+enabled in a default upstream Bash build, and (empirically) not on 
+OpenBSD either. <span class="anchor" id="line-41"></span><span class="anchor" id="line-42"></span></p><p class="line862">If
+ this feature is enabled on your system, Bash detects that SSH_CLIENT or
+ SSH_CLIENT2 is in the environment and in this case source .bashrc. eg 
+suppose you have var=foo in your remote .bashrc and you do <tt class="backtick">ssh&nbsp;remotehost&nbsp;echo&nbsp;\$var</tt> it will print foo. <span class="anchor" id="line-43"></span><span class="anchor" id="line-44"></span></p><p class="line862">This shell is non-interactive so you can test $- or $PS1, if you don't want things to be executed this way in your <tt class="backtick">.bashrc</tt>. <span class="anchor" id="line-45"></span><span class="anchor" id="line-46"></span></p><p class="line862">Without this option bash will test if stdin is connected to a socket and will also source <tt class="backtick">.bashrc</tt> in this case <strong>BUT</strong>
+ this test fails if you use a recent openssh server (&gt;5.0)  which 
+means that you will probably only see this on older systems. <span class="anchor" id="line-47"></span><span class="anchor" id="line-48"></span></p><p class="line862">Note that a test on SHLVL is also done, so if you do: ssh remotehost bash -c echo then the first bash will source <tt class="backtick">.bashrc</tt> but not the second one (the explicit bash on the command line that runs echo). <span class="anchor" id="line-49"></span><span class="anchor" id="line-50"></span></p><p class="line874">The behaviour of the bash patched to source a system level bashrc by some vendors is left as an exercise. <span class="anchor" id="line-51"></span><span class="anchor" id="line-52"></span><span class="anchor" id="line-53"></span></p><p class="line867">
+</p><h2 id="X_sessions">X sessions</h2>
+<span class="anchor" id="line-54"></span><span class="anchor" id="line-55"></span><p class="line862">Let's suppose pierre (our console user) decides he wants to run X for a while.  He types <tt class="backtick">startx</tt>, which invokes whichever set of X clients he prefers.  <tt class="backtick">startx</tt> is a wrapper around <tt class="backtick">xinit</tt>, which runs the X server ("X"), and then runs through pierre's <tt class="backtick">.xinitrc</tt> or <tt class="backtick">.xsession</tt> file (if either one exists), or the system-wide default Xsession otherwise.  Let's suppose pierre has the command <tt class="backtick">exec&nbsp;fluxbox</tt> (and nothing else) in his <tt class="backtick">.xsession</tt>
+ file.  When the smoke clears, he'll have an X server process running 
+(as root), and a fluxbox process running (as pierre).  fluxbox was 
+created as a child of xinit, which was a child of startx, which was a 
+child of bash, so it inherited pierre's <tt class="backtick">LANG</tt> 
+and other environment variables.  When pierre launches something from 
+the window manager's menu, that new command will be a child of fluxbox, 
+so it inherits <tt class="backtick">LANG</tt>, <tt class="backtick">PATH</tt>, <tt class="backtick">MAIL</tt>, etc. as well.  In addition to all of that, fluxbox inherits the <tt class="backtick">DISPLAY</tt> environment variable which tells it which X server to contact (in this case, probably <tt class="backtick">:0</tt>). <span class="anchor" id="line-56"></span><span class="anchor" id="line-57"></span></p><p class="line862">So what happens when pierre runs an xterm?  fluxbox "forks" and "execs" an xterm process, which inherits <tt class="backtick">DISPLAY</tt>, and so on.  xterm contacts the X server, authenticates if necessary, and then draws itself on the display.  In addition to <tt class="backtick">DISPLAY</tt>, it inherited pierre's <tt class="backtick">SHELL</tt> variable, which probably contains <tt class="backtick">/bin/bash</tt>, so it sets up a pseudo-terminal, then spawns a <tt class="backtick">/bin/bash</tt> process to run in it.  Since <tt class="backtick">/bin/bash</tt> doesn't start with a <tt class="backtick">-</tt>, this one will not be a login shell.  It will be a normal shell, which doesn't read <tt class="backtick">/etc/profile</tt> or <tt class="backtick">.bash_profile</tt> or <tt class="backtick">.profile</tt>.  Instead, it reads <tt class="backtick">.bashrc</tt> which in our example contains the line <tt class="backtick">set&nbsp;+o&nbsp;histexpand</tt>.
+  So his new xterm is running a bash shell, with all of his environment 
+variables set (remember, they were inherited from his initial text 
+console login shell), and his shell option of choice has been enabled 
+(from <tt class="backtick">.bashrc</tt>). <span class="anchor" id="line-58"></span><span class="anchor" id="line-59"></span></p><p class="line862">What
+ we've seen so far is the normal Unix setup.  Many people choose to run 
+their systems this way, and it works well.  It's also fairly simple to 
+understand once you've been exposed to the basic concepts.  If you want 
+to change something, you know precisely what file to edit to make it 
+happen -- aliases and transient shell options go in <tt class="backtick">.bashrc</tt>, and environment variables, process limits, and so on go in <tt class="backtick">.bash_profile</tt>.  If you want to run various X client commands before your window manager or desktop environment is invoked (for example, <tt class="backtick">xterm&nbsp;&amp;</tt> or <tt class="backtick">xmodmap&nbsp;-e&nbsp;'keysym&nbsp;Super_R&nbsp;=&nbsp;Multi_key'</tt>), you can put them in <tt class="backtick">.xsession</tt> before the <tt class="backtick">exec&nbsp;YourWindowManager</tt> line. <span class="anchor" id="line-60"></span><span class="anchor" id="line-61"></span></p><p class="line867">
+</p><h2 id="Display_Manager_logins">Display Manager logins</h2>
+<span class="anchor" id="line-62"></span><span class="anchor" id="line-63"></span><p class="line862">However,
+ some people like to have a graphical login (display manager), and that 
+changes pretty much everything we've seen so far.  Instead of getty and 
+login, there's an xdm (or gdm or kdm or wdm or ...) process handling the
+ authentication.  And the biggest difference of all is that when our *dm
+ process finishes authenticating the user, it doesn't "exec" a login 
+shell.  Instead, it "execs" an X session directly.  Therefore, none of 
+the "normal" user configuration files are read in at all -- no <tt class="backtick">/etc/profile</tt>, no <tt class="backtick">.bash_profile</tt> and no <tt class="backtick">.profile</tt>.  (But <tt class="backtick">/etc/environment</tt> is still read in by PAM, assuming <tt class="backtick">/etc/pam.d/*dm</tt> is configured to use pam_limits, as is the case on Debian.) <span class="anchor" id="line-64"></span><span class="anchor" id="line-65"></span></p><p class="line862">Let's
+ take xdm as an example.  Pierre comes back from vacation one day and 
+discovers that his system administrator has installed xdm on the Debian 
+system.  He logs in just fine, and xdm reads his <tt class="backtick">.xsession</tt> file and runs fluxbox.  Everything seems to be OK until he gets an error message in the wrong locale!  Since he overrides the <tt class="backtick">LANG</tt> variable in his <tt class="backtick">.bash_profile</tt>, and since xdm never reads <tt class="backtick">.bash_profile</tt>, his <tt class="backtick">LANG</tt> variable is now set to <tt class="backtick">en_US</tt> instead of <tt class="backtick">fr_CA</tt>. <span class="anchor" id="line-66"></span><span class="anchor" id="line-67"></span></p><p class="line862">Now, the naive solution to this problem is that instead of launching <tt class="backtick">xterm</tt>, he could configure his window manager to launch <tt class="backtick">xterm&nbsp;-ls</tt>.
+  This flag tells xterm that instead of launching a normal shell, it 
+should launch a login shell.  Under this setup, xterm spawns <tt class="backtick">/bin/bash</tt> but it puts <tt class="backtick">-/bin/bash</tt> (or maybe <tt class="backtick">-bash</tt>) in the argument vector, so bash acts like a login shell.  This means that every time he opens up a new xterm, it will read <tt class="backtick">/etc/profile</tt> and <tt class="backtick">.bash_profile</tt> (built-in bash behavior), and then <tt class="backtick">.bashrc</tt> (because his <tt class="backtick">.bash_profile</tt>
+ says to do that).  This may seem to work fine at first -- his dot files
+ aren't heavy, so he doesn't even notice the delay -- but there's a more
+ subtle problem.  He also launches a web browser directly from his 
+fluxbox menu, and the web browser inherits the <tt class="backtick">LANG</tt>
+ variable from fluxbox, which is still set to the wrong locale.  So 
+while his xterms may be fine, and anything launched from his xterms may 
+be fine, his web browser is still giving him pages in the wrong locale. <span class="anchor" id="line-68"></span><span class="anchor" id="line-69"></span></p><p class="line862">So, what's the best solution to this problem?  There really isn't a universal one.  One approach is to modify the <tt class="backtick">.xsession</tt> file to look something like this: <span class="anchor" id="line-70"></span><span class="anchor" id="line-71"></span></p><p class="line867"><span class="anchor" id="line-72"></span><span class="anchor" id="line-73"></span><span class="anchor" id="line-74"></span><span class="anchor" id="line-75"></span><span class="anchor" id="line-76"></span><span class="anchor" id="line-77"></span></p><pre><span class="anchor" id="line-1-1"></span>[ -r /etc/profile ] &amp;&amp; source /etc/profile
+<span class="anchor" id="line-2-1"></span>[ -r ~/.bash_profile ] &amp;&amp; source ~/.bash_profile
+<span class="anchor" id="line-3-1"></span>xmodmap -e 'keysym Super_R = Multi_key'
+<span class="anchor" id="line-4-1"></span>xterm &amp;
+<span class="anchor" id="line-5"></span>exec fluxbox</pre><span class="anchor" id="line-78"></span><span class="anchor" id="line-79"></span><p class="line862">This causes the shell that's interpreting the <tt class="backtick">.xsession</tt> script to read in <tt class="backtick">/etc/profile</tt> and <tt class="backtick">.bash_profile</tt>
+ if they exist and are readable, before running xmodmap or xterm or 
+"execing" the window manager.  However, there's one potential drawback 
+to this approach: under xdm, the shell that reads <tt class="backtick">.xsession</tt> runs without a controlling terminal.  If either <tt class="backtick">/etc/profile</tt> or <tt class="backtick">.bash_profile</tt> uses any commands that assume the presence of a terminal (such as <tt class="backtick">fortune</tt> or <tt class="backtick">stty</tt>),
+ those commands may fail.  This is the primary reason why xdm doesn't 
+read those files by default.  If you're going to use this approach, you 
+must make sure that all of the commands in your "dot files" are safe to 
+run when there's no terminal. <span class="anchor" id="line-80"></span><span class="anchor" id="line-81"></span></p><p class="line862">One way to do that, but still retain those commands for use when you login with <tt class="backtick">ssh</tt>, is to protect the relevant block of code with an <tt class="backtick">if</tt> statement.  For example: <span class="anchor" id="line-82"></span><span class="anchor" id="line-83"></span></p><p class="line867"><span class="anchor" id="line-84"></span><span class="anchor" id="line-85"></span><span class="anchor" id="line-86"></span><span class="anchor" id="line-87"></span><span class="anchor" id="line-88"></span><span class="anchor" id="line-89"></span><span class="anchor" id="line-90"></span><span class="anchor" id="line-91"></span><span class="anchor" id="line-92"></span><span class="anchor" id="line-93"></span><span class="anchor" id="line-94"></span><span class="anchor" id="line-95"></span><span class="anchor" id="line-96"></span><span class="anchor" id="line-97"></span><span class="anchor" id="line-98"></span></p><div class="codearea" dir="ltr" lang="en">
+<script type="text/javascript">
+function isnumbered(obj) {
+  return obj.childNodes.length && obj.firstChild.childNodes.length && obj.firstChild.firstChild.className == 'LineNumber';
+}
+function nformat(num,chrs,add) {
+  var nlen = Math.max(0,chrs-(''+num).length), res = '';
+  while (nlen>0) { res += ' '; nlen-- }
+  return res+num+add;
+}
+function addnumber(did, nstart, nstep) {
+  var c = document.getElementById(did), l = c.firstChild, n = 1;
+  if (!isnumbered(c)) {
+    if (typeof nstart == 'undefined') nstart = 1;
+    if (typeof nstep  == 'undefined') nstep = 1;
+    var n = nstart;
+    while (l != null) {
+      if (l.tagName == 'SPAN') {
+        var s = document.createElement('SPAN');
+        var a = document.createElement('A');
+        s.className = 'LineNumber';
+        a.appendChild(document.createTextNode(nformat(n,4,'')));
+        a.href = '#' + did + '_' + n;
+        s.appendChild(a);
+        s.appendChild(document.createTextNode(' '));
+        n += nstep;
+        if (l.childNodes.length) {
+          l.insertBefore(s, l.firstChild);
+        }
+        else {
+          l.appendChild(s);
+        }
+      }
+      l = l.nextSibling;
+    }
+  }
+  return false;
+}
+function remnumber(did) {
+  var c = document.getElementById(did), l = c.firstChild;
+  if (isnumbered(c)) {
+    while (l != null) {
+      if (l.tagName == 'SPAN' && l.firstChild.className == 'LineNumber') l.removeChild(l.firstChild);
+      l = l.nextSibling;
+    }
+  }
+  return false;
+}
+function togglenumber(did, nstart, nstep) {
+  var c = document.getElementById(did);
+  if (isnumbered(c)) {
+    remnumber(did);
+  } else {
+    addnumber(did,nstart,nstep);
+  }
+  return false;
+}
+</script>
+
+<script type="text/javascript">
+document.write('<a href="#" onclick="return togglenumber(\'CA-4866ecee33a99c3181d23bce9be20f7ff48ea5ef\', 1, 1);" \
+                class="codenumbers">Toggle line numbers<\/a>');
+</script><a href="#" onclick="return togglenumber('CA-4866ecee33a99c3181d23bce9be20f7ff48ea5ef', 1, 1);" class="codenumbers">Toggle line numbers</a>
+<pre dir="ltr" id="CA-4866ecee33a99c3181d23bce9be20f7ff48ea5ef" lang="en"><span class="line"><span class="Comment">## Sample .bash_profile</span></span>
+<span class="line">export PATH=$HOME/bin:$PATH</span>
+<span class="line">export MAIL=$HOME/Maildir/</span>
+<span class="line">export LESS=-X</span>
+<span class="line">export EDITOR=vim VISUAL=vim</span>
+<span class="line">export LANG=fr_CA</span>
+<span class="line"><span class="Comment"># Begin protected block</span></span>
+<span class="line">if [ -t 0 ]; then       # check for a terminal</span>
+<span class="line">  [ x"$TERM" = x"wy30" ] &amp;&amp; stty erase ^h       # sample legacy environment</span>
+<span class="line">  echo "Welcome to Debian, $LOGNAME"</span>
+<span class="line">  /usr/games/fortune</span>
+<span class="line">fi</span>
+<span class="line"><span class="Comment"># End protected block</span></span>
+<span class="line">[ -r ~/.bashrc ] &amp;&amp; source ~/.bashrc</span>
+</pre></div><span class="anchor" id="line-99"></span><span class="anchor" id="line-100"></span><p class="line874">Unfortunately,
+ the other display manager programs (kdm, gdm, etc.) do not all use the 
+same configuration files that xdm uses.  So this approach may not work 
+for them.  You may need to consult the documentation for your display 
+manager program to find out which file(s) you should use for controlling
+ your sessions. <span class="anchor" id="line-101"></span><span class="anchor" id="line-102"></span></p><p class="line867"></p><hr><p class="line874"> <span class="anchor" id="line-103"></span><a href="http://mywiki.wooledge.org/CategoryShell">CategoryShell</a> <a href="http://mywiki.wooledge.org/CategoryUnix">CategoryUnix</a> <span class="anchor" id="line-104"></span><span class="anchor" id="bottom"></span></p></div><p id="pageinfo" class="info" dir="ltr" lang="en">DotFiles  (last edited 2019-08-08 10:46:40 by <span title="??? @ 14.143.231.94.static-vsnl.net.in[14.143.231.94]">14</span>)</p>
+
+<div id="pagebottom"></div>
+</div>
+
+
+<div id="footer">
+<ul class="editbar"><li><a href="http://mywiki.wooledge.org/DotFiles?action=edit&amp;editor=text" name="texteditlink" rel="nofollow">Edit (Text)</a></li><li><a href="http://mywiki.wooledge.org/DotFiles?action=edit&amp;editor=gui">Edit (GUI)</a></li><li class="toggleCommentsButton" style="display:none;"><a href="#" class="nbcomment" onclick="toggleComments();return false;">Comments</a></li><li><a class="nbinfo" href="http://mywiki.wooledge.org/DotFiles?action=info" rel="nofollow">Info</a></li><li><a class="nbattachments" href="http://mywiki.wooledge.org/DotFiles?action=AttachFile" rel="nofollow">Attachments</a></li><li>
+<form class="actionsmenu" method="GET" action="/DotFiles">
+<div>
+    
+    <select name="action" onchange="if ((this.selectedIndex != 0) &amp;&amp;
+                      (this.options[this.selectedIndex].disabled == false)) {
+                this.form.submit();
+            }
+            this.selectedIndex = 0;">
+        <option value="show" selected="selected">More Actions:</option><option value="raw">Raw Text</option>
+<option value="print">Print View</option>
+<option value="RenderAsDocbook">Render as Docbook</option>
+<option value="refresh">Delete Cache</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="SpellCheck">Check Spelling</option>
+<option value="LikePages">Like Pages</option>
+<option value="LocalSiteMap">Local Site Map</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="RenamePage" disabled="disabled" class="disabled">Rename Page</option>
+<option value="DeletePage" disabled="disabled" class="disabled">Delete Page</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="show" disabled="disabled" class="disabled">Subscribe User</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="show" disabled="disabled" class="disabled">Remove Spam</option>
+<option value="show" disabled="disabled" class="disabled">Revert to this revision</option>
+<option value="PackagePages">Package Pages</option>
+<option value="SyncPages">Sync Pages</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="Load">Load</option>
+<option value="Save">Save</option>
+<option value="SlideShow">SlideShow</option>
+    </select>
+    
+    
+</div>
+<script type="text/javascript">
+<!--// Init menu
+actionsMenuInit('More Actions:');
+//-->
+</script>
+</form>
+</li></ul>
+
+<ul id="credits">
+<li><a href="http://moinmo.in/" title="This site uses the MoinMoin Wiki software.">MoinMoin Powered</a></li><li><a href="http://moinmo.in/Python" title="MoinMoin is written in Python.">Python Powered</a></li><li><a href="http://moinmo.in/GPL" title="MoinMoin is GPL licensed.">GPL licensed</a></li><li><a href="http://validator.w3.org/check?uri=referer" title="Click here to validate this page.">Valid HTML 4.01</a></li>
+</ul>
+
+
+</div>
+
+
+
+</body></html>
