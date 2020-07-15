@@ -15,6 +15,7 @@ alias ll="ls -l"
 alias kdirstat="k4dirstat"
 alias kate='kate 2> /dev/null'
 alias edit='kate 2> /dev/null'
+alias okular='okular 2> /dev/null'
 alias evince='evince 2> /dev/null'
 alias tree='tree -C'
 
