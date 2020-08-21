@@ -12,6 +12,7 @@ alias ls="ls --color"
 alias l="ls -ltr"
 alias ll="ls -l"
 
+alias lsdist='lsb_release -cs'
 alias kdirstat="k4dirstat"
 alias kate='kate 2> /dev/null'
 alias edit='kate 2> /dev/null'
