@@ -11,6 +11,7 @@ alias ls="ls --color"
 #alias ls="ls -G"
 alias l="ls -ltr"
 alias ll="ls -l"
+alias la="ls -A"
 
 alias lsdist='lsb_release -cs'
 alias kdirstat="k4dirstat"
