@@ -25,7 +25,7 @@ alias tree='tree -C'
 #alias egrep='egrep --color=auto'
 #alias fgrep='fgrep --color=auto'
 
-export EDITOR='emacs -nw'
+export VISUAL='emacs -nw'
 export SVN_EDITOR='emacs -nw'
 
 alias ethtool=/sbin/ethtool
