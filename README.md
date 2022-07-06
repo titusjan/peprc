@@ -31,3 +31,12 @@ the .bashrc file:
         . ~/.peprc/color_prompt.sh
     fi
 
+
+TODO
+----
+
+Make it work under graphical shells so that the environment variables are also set when 
+starting a program from the start menu. 
+
+This can be done by setting them in ~/.xprofile, ~/.xinitrc, or ~/.xsession
+See: https://wiki.archlinux.org/title/environment_variables#Graphical_environment
