@@ -17,6 +17,8 @@ alias cdw="cd /cygdrive/c/Users/${USER}"
 
 
 # Get the ID of the current WIFI basestation.
+# Note that you don't get any result if your computer is connected 
+# to a fixed ethernet cable.
 alias bssid='netsh wlan show interfaces | grep BSSID'
 
 
