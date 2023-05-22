@@ -15,6 +15,11 @@ alias la="ls -A"
 
 alias cdw="cd /cygdrive/c/Users/${USER}"
 
+
+# Get the ID of the current WIFI basestation.
+alias bssid='netsh wlan show interfaces | grep BSSID'
+
+
 #alias grep='grep --color'
 #alias egrep='egrep --color=auto'
 #alias fgrep='fgrep --color=auto'
