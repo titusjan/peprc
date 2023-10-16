@@ -21,6 +21,7 @@ alias qpdfview='qpdfview 2> /dev/null'
 alias okular='okular 2> /dev/null'
 alias evince='evince 2> /dev/null'
 alias tree='tree -C'
+alias list_devices='lsblk -o name,size,size,fstype,type,mountpoint,uuid'
 
 #alias grep='grep --color'
 #alias egrep='egrep --color=auto'
