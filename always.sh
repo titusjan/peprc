@@ -11,6 +11,7 @@ alias ls="ls --color"
 #alias ls="ls -G"
 alias l="ls -ltr"
 alias ll="ls -l"
+alias la="ls -A"
 
 alias lsdist='lsb_release -cs'
 alias kdirstat="k4dirstat"
@@ -20,12 +21,13 @@ alias qpdfview='qpdfview 2> /dev/null'
 alias okular='okular 2> /dev/null'
 alias evince='evince 2> /dev/null'
 alias tree='tree -C'
+alias list_devices='lsblk -o name,size,fstype,type,mountpoint,ptuuid,uuid'
 
 #alias grep='grep --color'
 #alias egrep='egrep --color=auto'
 #alias fgrep='fgrep --color=auto'
 
-export EDITOR='emacs -nw'
+export VISUAL='emacs -nw'
 export SVN_EDITOR='emacs -nw'
 
 alias ethtool=/sbin/ethtool

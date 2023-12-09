@@ -9,5 +9,9 @@ export PEPRC_AT_LOGIN_EXECUTED=1
 
 
 #export PATH="/home/pepijnk/local/bin:$PATH"
-export PATH="/${HOME}/.local/bin:$PATH"
+
+# Adding the .local/bin directory doesn't seem necessary anymore in modern debians
+# This was a bug that since long has been fixed. 
+# See https://unix.stackexchange.com/a/392710/373438
+#export PATH="/${HOME}/.local/bin:$PATH"
 
