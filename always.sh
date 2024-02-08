@@ -61,3 +61,5 @@ export PYTHONDONTWRITEBYTECODE=1
 #export QT_XKB_CONFIG_ROOT=/usr/share/X11/xkb
 
 
+# To be able to run X programs as root (with sudo)
+# export XAUTHORITY=/home/kenter/.Xauthority
