@@ -27,8 +27,10 @@ alias list_devices='lsblk -o name,size,fstype,type,mountpoint,ptuuid,uuid'
 #alias egrep='egrep --color=auto'
 #alias fgrep='fgrep --color=auto'
 
-export VISUAL='emacs -nw'
-export SVN_EDITOR='emacs -nw'
+#export VISUAL='emacs -nw'
+#export SVN_EDITOR='emacs -nw'
+export VISUAL='nano'
+export SVN_EDITOR='nano'
 
 alias ethtool=/sbin/ethtool
 #alias pycharm=/home/kenter/Install/pycharm-community-2018.1.4/bin/pycharm.sh
